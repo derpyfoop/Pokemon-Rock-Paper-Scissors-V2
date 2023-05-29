@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #383838;
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#crt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*header*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+    padding: 20px;
+}
+
+.header1 {
+    color: #ffcc01;
+    background-color: #101010;
+}
+
+.header2 {
+    color: #b7a037;
+    text-shadow: 0 0 2px #6d6021;
+    background-color: #101010;
+}
+
+.header3 {
+    color: #78c84e;
+    text-shadow: 0 0 2px #43702b;
+    background-color: #101010;
+}
+
+.header4 {
+    color: #a890f0;
+    text-shadow: 0 0 2px #5d5086;
+    background-color: #101010;
+}
+
+/*Main*/
+
+#contentCrt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid #ffd304;
+    border-radius: 4px;
+    color: #ffd304;
+    text-align: center;
+    padding: 15px 20px;
+    width: 200px;
+    font-size: 46px;
+    position: relative;
+}
+
+.badge {
+    background-color: #f43739;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+#trainer-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#joey-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.result {
+    font-size: 40px;
+    color: white;
+}
+
+.result>p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.choices {
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.choice {
+    padding: 10px;
+    margin: 0px 10px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.choice:active {
+    transition: none;
+}
+
+#rock {
+    color: white;
+    background-color: #b7a037;
+    border: 5px solid #b7a037;
+    border-radius: 15px;
+}
+
+#rock:hover {
+    background-color: #92802c;
+}
+
+#rock:active {
+    background-color: black;
+}
+
+#grass {
+    color: white;
+    background-color: #78c84e;
+    border: 5px solid #78c84e;
+    border-radius: 15px;
+}
+
+#grass:hover {
+    background-color: #60a03e;
+}
+
+#grass:active {
+    background-color: black;
+}
+
+#flying {
+    color: white;
+    background-color: #a890f0;
+    border: 5px solid #a890f0;
+    border-radius: 15px;
+}
+
+#flying:hover {
+    background-color: #8673c0;
+}
+
+#flying:active {
+    background-color: black;
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.audio-wrapper {
+    display: inline-block;
+    position: relative;
+    left: 40%;
+}
+
+.volume-slider-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.audio-wrapper:hover .volume-slider-wrapper {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #101010;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2em;
+}

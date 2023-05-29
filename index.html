@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon: Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="crt">
+        <header>
+            <h1>
+                <span class="header1">Pokémon:</span>
+                <span class="header2"> Rock,</span>
+                <span class="header3"> Paper,</span>
+                <span class="header4"> Scissors</span>
+            </h1>
+        </header>
+
+        <div id="contentCrt">
+            <div id="content">
+
+                <div class="score-board">
+                    <div id="trainer-label" class="badge">trainer</div>
+                    <div id="joey-label" class="badge">joey</div>
+                    <span id="trainer-score">0</span>:<span id="joey-score">0</span>
+                </div>
+
+                <div class="result">
+                    <p>Select your option!</p>
+                </div>
+
+                <p id="action-message">What will trainer do?</p>
+
+                <div class="choices">
+                    <button id="rock" class="choice">Rock</button>
+                    <button id="grass" class="choice">Grass</button>
+                    <button id="flying" class="choice">Air</button>
+                </div>
+
+                <div class="audio-wrapper">
+                    <div id="imgCrt">
+                        <img id="toggleButton" src="Imgs/volume_off_FILL0_wght400_GRAD0_opsz48.svg" />
+                    </div>
+                    <audio id="backgroundMusic" src="music/trainerMusic.mp3" autoplay loop></audio>
+                    <div class="volume-slider-wrapper">
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Copyright © 2023 Matthew E Ward | The Pokémon Company. </p>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
